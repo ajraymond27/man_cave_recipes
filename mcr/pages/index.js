@@ -1,65 +1,47 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import React from 'react';
+import Head from 'next/head';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
-export default function Home() {
+
+
+export default class Home extends React.Component {
+  constructor(props) {
+      super (props);
+    }
+    
+  render() {
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Juneteenth Celebratory Protest</title>
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <Header />
+      <h1>Juneteenth Celebratory Protest</h1>
+      <h4 style={{color: 'var(--base1)'}}>Friday June 19th | 1:00 PM ET</h4>
+      <h4 style={{color: 'var(--base1)'}}>Holiday Park | Broad Ripple Indianapolis</h4>
+      {/* <h4>Dunn Meadow</h4>
+      <h4>3:00 PM ET</h4> */}
+      <div style={{marginBottom: 10}}>
+      <p>On May 25th, George Floyd was murdered by Minneapolis police. 
+          This brutal killing follows the death of Sean Reed who live streamed his own murder as police laughed; Breonna Taylor who was killed in her bed at the hands of police in Louisville, Kentucky; Ahmaud Arbery who was murdered in a Georgia suburb while jogging; the heinous actions of Amy Cooper in Central Park; and centuries of police abuse and violence targeted against Black and communities of color. </p>
+        <p>Juneteenth, also known as Freedom Day, or the Black Fourth of July, is an American holiday that commemorates June 19, 1865 when union soldiers entered into Texas with news that the Civil War was over and that the enslaved were now free.  
+          Juneteenth is the oldest nationally celebrated commemoration of the ending of slavery in the United States. 
+          Our mission is to create a Juneteenth Protest in Indianapolis June 19th, 2020 to commemorate the diverse history, culture, and beauty of what it means to be Black in America. </p>
+        <VictimScroller />
+        <div style={{margin: '0 auto', textAlign: 'center', }}>
+          <a href="/agenda"><button style={button}>Agenda</button></a>
+          <a href="/donate"><button style={button}>Donate</button></a>
+          <a href="/about"><button style={button}>About</button></a>
         </div>
-      </main>
+      
+        {/* <img src='./poster_cropped.jpg' style={poster}/> */}
+      </div>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+      <footer>
+        <Footer />
       </footer>
     </div>
   )
+} 
 }
