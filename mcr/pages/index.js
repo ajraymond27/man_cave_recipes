@@ -13,7 +13,7 @@ import ReactPlayer from 'react-player';
 
 
 const img ={
-  backgroundImage: 'url("./garage.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))',
+  backgroundImage: 'url("./grill.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))',
   height: '90vh',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
