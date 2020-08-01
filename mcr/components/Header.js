@@ -16,7 +16,7 @@ const logo = {
 export default function Header() {
     return (
         <Navbar collapseOnSelect expand="lg" sticky="top" style={navbar}>
-            <Navbar.Brand href="/" ><img src="" style={logo}/></Navbar.Brand>
+            <Navbar.Brand href="/" ><Link href="/" >MAN CAVE</Link></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                 <Nav>

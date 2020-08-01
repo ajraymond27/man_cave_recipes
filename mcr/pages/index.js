@@ -62,8 +62,8 @@ export default class Home extends React.Component {
       <Header />
       <div style={img}>
         <div style={text}>
-          <h1>JIM'S GARAGE SWEET GARAGE</h1>
-          <p>Insert Catchy Tagline</p>
+          <h1>MAN CAVE KITCHEN</h1>
+          <h4>Insert Catchy Tagline</h4>
         </div>
       </div>
 
@@ -100,7 +100,7 @@ export default class Home extends React.Component {
 
 
         <div style={{margin: '0 auto', textAlign: 'center', }}>
-          <a href="/agenda"><button style={button}>Recipes</button></a>
+          <a href="/recipes"><button style={button}>Recipes</button></a>
           <a href="/about"><button style={button}>About</button></a>
         </div>
 
