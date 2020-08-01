@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 import '../styles/Home.module.css';
-<script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
