@@ -12,22 +12,28 @@ import ModalBody from 'react-bootstrap/ModalBody';
 import ReactPlayer from 'react-player';
 
 const img ={
-  backgroundImage: 'url("./garage.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))',
+  backgroundImage: 'url("./garage.png"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))',
   height: '25vh',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   position: 'relative',
   marginBottom: '25px',
+  opacity: 0.8,
 }
 
 const text ={
-    textAlign: 'center',
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    color: 'white',
+  textAlign: 'center',
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  color: 'var(--black)',
+  fontWeight: 'bold',
+  padding: '10px',
+  background: 'rgba(255, 255, 255, .77)',
+  fontSize: '40pt',
+  fontWeight: 'bold',
 }
 
 const recipe ={
@@ -48,91 +54,97 @@ export default class Recipes extends React.Component {
       <Header />
       <div style={img}>
         <div style={text}>
-          <h1>RECIPES</h1>
+          <p>RECIPES</p>
         </div>
       </div>
 
       <div>
-      <CardGroup style={recipe}>
-        <Card>
-          <ReactPlayer url='https://www.youtube.com/watch?v=L6yX6Oxy_J8' loop='true' width='100%' controls='true'/>
-        </Card>
-        <Card>
-          <Card.Body>
-            <Card.Text>
-            <Card.Title><h2>Burgers</h2></Card.Title>
+        <CardGroup style={recipe}>
+          <Card>
+            <ReactPlayer url='https://www.youtube.com/watch?v=L6yX6Oxy_J8' loop='true' width='100%' controls='true'/>
+          </Card>
+          <Card>
+            <Card.Body>
+              <Card.Text>
+              <Card.Title><h4>Burgers</h4></Card.Title>
 
-              <h4>Time</h4>
-              <p>45 mins</p>
+                <h6>Time</h6>
+                <p>45 mins</p>
 
-              <h4>Ingredients</h4>
-              <ul>
-                <li>Ground Beef</li>
-                <li>Buns</li>
-                <li>Cheese</li>
+                <h6>Ingredients</h6>
+                <ul>
+                  <li>Ground Beef</li>
+                  <li>Buns</li>
+                  <li>Cheese</li>
+                </ul>
 
-              </ul>
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <Launch />
-          </Card.Footer>
-        </Card>
-      </CardGroup>
+                <h6>Instructions</h6>
 
-      <CardGroup style={recipe}>
-        <Card>
-          <ReactPlayer url='https://www.youtube.com/watch?v=L6yX6Oxy_J8' loop='true' width='100%' controls='true'/>
-        </Card>
-        <Card>
-          <Card.Body>
-            <Card.Text>
-            <Card.Title><h2>Burgers</h2></Card.Title>
+              </Card.Text>
+            </Card.Body>
+            <Card.Footer>
+              <Launch />
+            </Card.Footer>
+          </Card>
+        </CardGroup>
 
-              <h4>Time</h4>
-              <p>45 mins</p>
+        <CardGroup style={recipe}>
+          <Card>
+            <ReactPlayer url='https://www.youtube.com/watch?v=L6yX6Oxy_J8' loop='true' width='100%' controls='true'/>
+          </Card>
+          <Card>
+            <Card.Body>
+              <Card.Text>
+              <Card.Title><h4>Burgers</h4></Card.Title>
 
-              <h4>Ingredients</h4>
-              <ul>
-                <li>Ground Beef</li>
-                <li>Buns</li>
-                <li>Cheese</li>
+                <h6>Time</h6>
+                <p>45 mins</p>
 
-              </ul>
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <Launch />
-          </Card.Footer>
-        </Card>
-      </CardGroup>
+                <h6>Ingredients</h6>
+                <ul>
+                  <li>Ground Beef</li>
+                  <li>Buns</li>
+                  <li>Cheese</li>
+                </ul>
 
-      <CardGroup style={recipe}>
-        <Card>
-          <ReactPlayer url='https://www.youtube.com/watch?v=L6yX6Oxy_J8' loop='true' width='100%' controls='true'/>
-        </Card>
-        <Card>
-          <Card.Body>
-            <Card.Text>
-            <Card.Title><h2>Burgers</h2></Card.Title>
+                <h6>Instructions</h6>
+                
+              </Card.Text>
+            </Card.Body>
+            <Card.Footer>
+              <Launch />
+            </Card.Footer>
+          </Card>
+        </CardGroup>
+        
+        <CardGroup style={recipe}>
+          <Card>
+            <ReactPlayer url='https://www.youtube.com/watch?v=L6yX6Oxy_J8' loop='true' width='100%' controls='true'/>
+          </Card>
+          <Card>
+            <Card.Body>
+              <Card.Text>
+              <Card.Title><h4>Burgers</h4></Card.Title>
 
-              <h4>Time</h4>
-              <p>45 mins</p>
+                <h6>Time</h6>
+                <p>45 mins</p>
 
-              <h4>Ingredients</h4>
-              <ul>
-                <li>Ground Beef</li>
-                <li>Buns</li>
-                <li>Cheese</li>
+                <h6>Ingredients</h6>
+                <ul>
+                  <li>Ground Beef</li>
+                  <li>Buns</li>
+                  <li>Cheese</li>
+                </ul>
 
-              </ul>
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <Launch />
-          </Card.Footer>
-        </Card>
-      </CardGroup>
+                <h6>Instructions</h6>
+                
+              </Card.Text>
+            </Card.Body>
+            <Card.Footer>
+              <Launch />
+            </Card.Footer>
+          </Card>
+        </CardGroup>
       </div>
 
       <footer>
@@ -170,21 +182,21 @@ function MyVerticallyCenteredModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Burgers
+          <h4>Burgers</h4>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Time</h4>
+        <h6>Time</h6>
         <p>45 mins</p>
 
-        <h4>Ingredients</h4>
+        <h6>Ingredients</h6>
         <ul>
           <li>Ground Beef</li>
           <li>Buns</li>
           <li>Cheese</li>
         </ul>
 
-        <h4>Instructions</h4>
+        <h6>Instructions</h6>
         <ul>
           <li>Step 1</li>
           <li>Step 2</li>
@@ -194,9 +206,6 @@ function MyVerticallyCenteredModal(props) {
 
         </ul>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
     </Modal>
   );
 }
