@@ -5,22 +5,22 @@ const photos = [
       height: 1
     },    
     {
-      src: './gallery/international3.jpg',
+      src: './gallery/international3.JPG',
       width: 1,
       height: 1
     },     
     {
-      src: './gallery/buffet.jpg',
+      src: './gallery/buffet.JPG',
       width: 2,
       height: 4
     },
     {
-      src: './gallery/chicken_mushroom.jpg',
+      src: './gallery/chicken_mushroom.JPG',
       width: 1,
       height: 1
     }, 
     {
-      src: './gallery/dessert.jpg',
+      src: './gallery/dessert.JPG',
       width: 1,
       height: 1
     }, 
@@ -35,17 +35,17 @@ const photos = [
       height: 1
     },  
     {
-      src: './gallery/flat_bread.jpg',
+      src: './gallery/flat_bread.JPG',
       width: 1,
       height: 1
     }, 
     {
-      src: './gallery/german_potato.jpg',
+      src: './gallery/german_potato.JPG',
       width: 1,
       height: 1
     }, 
     {
-      src: './gallery/international4.jpg',
+      src: './gallery/international4.JPG',
       width: 1,
       height: 1
     },     
@@ -55,12 +55,12 @@ const photos = [
       height: 1
     },
     {
-      src: './gallery/greek.jpg',
+      src: './gallery/greek.JPG',
       width: 1,
       height: 1
     }, 
     {
-      src: './gallery/green_soup.jpg',
+      src: './gallery/green_soup.JPG',
       width: 1,
       height: 1
     }, 
@@ -85,12 +85,12 @@ const photos = [
       height: 1
     },    
     {
-      src: './gallery/international2.jpg',
+      src: './gallery/international2.JPG',
       width: 1,
       height: 1
     }, 
     {
-      src: './gallery/lamb.jpg',
+      src: './gallery/lamb.JPG',
       width: 2,
       height: 1
     },        
@@ -100,17 +100,17 @@ const photos = [
       height: 1
     },    
     {
-      src: './gallery/pasta.jpg',
+      src: './gallery/pasta.JPG',
       width: 1,
       height: 1
     }, 
     {
-      src: './gallery/seneglese_chicken.jpg',
+      src: './gallery/seneglese_chicken.JPG',
       width: 1,
       height: 1
     }, 
     {
-      src: './gallery/sushi.jpg',
+      src: './gallery/sushi.JPG',
       width: 1,
       height: 1
     },      
