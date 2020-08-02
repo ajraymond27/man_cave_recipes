@@ -168,9 +168,6 @@ function MyVerticallyCenteredModal(props) {
           <li>Step 5</li>
         </ul>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
     </Modal>
   );
 }
