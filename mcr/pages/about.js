@@ -60,7 +60,7 @@ export default class About extends React.Component {
       <Header />
       <div style={img}>
         <div style={text}>
-          <h1>ABOUT</h1>
+          <p>ABOUT</p>
         </div>
       </div>
 
