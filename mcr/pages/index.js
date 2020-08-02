@@ -7,6 +7,8 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import ReactPlayer from 'react-player';
+import Gallery from "react-photo-gallery";
+import photos from '../public/gallery/photos';
 
 
 const img ={
@@ -42,7 +44,7 @@ const button ={
   border: 'none',
   color: 'var(--white)',
   fontWeight: 'bold',
-  width: '35vw',
+  width: '37vw',
   padding: 15,
   margin: 10,
   textAlign: 'center',
@@ -76,18 +78,20 @@ export default class Home extends React.Component {
         <Card>
           <Card.Body>
             <Card.Text>
-            <Card.Title><h2>Burgers</h2></Card.Title>
+            <Card.Title><h4>Burgers</h4></Card.Title>
 
-              <h4>Time</h4>
+              <h6>Time</h6>
               <p>45 mins</p>
 
-              <h4>Ingredients</h4>
+              <h6>Ingredients</h6>
               <ul>
                 <li>Ground Beef</li>
                 <li>Buns</li>
                 <li>Cheese</li>
-
               </ul>
+
+              <h6>Instructions</h6>
+
             </Card.Text>
           </Card.Body>
           <Card.Footer>
@@ -97,16 +101,19 @@ export default class Home extends React.Component {
       </CardGroup>
       </div>
 
+      <h2>Photo Gallery</h2>
+      <Gallery photos={photos} />
 
-        <div style={{margin: '0 auto', textAlign: 'center', }}>
-          <a href="/recipes"><button style={button}>Recipes</button></a>
-          <a href="/about"><button style={button}>About</button></a>
-        </div>
 
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+      <div style={{margin: '0 auto', textAlign: 'center', }}>
+        <a href="/recipes"><button style={button}>Recipes</button></a>
+        <a href="/about"><button style={button}>About</button></a>
+      </div>
+
+    <footer>
+      <Footer />
+    </footer>
+  </div>
   )
 } 
 }
@@ -138,11 +145,11 @@ function MyVerticallyCenteredModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Burgers
+          <h4>Burgers</h4>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Time</h4>
+        <h6>Time</h6>
         <p>45 mins</p>
 
         <h4>Ingredients</h4>
@@ -152,14 +159,13 @@ function MyVerticallyCenteredModal(props) {
           <li>Cheese</li>
         </ul>
 
-        <h4>Instructions</h4>
+        <h6>Instructions</h6>
         <ul>
           <li>Step 1</li>
           <li>Step 2</li>
           <li>Step 3</li>
           <li>Step 4</li>
           <li>Step 5</li>
-
         </ul>
       </Modal.Body>
       <Modal.Footer>

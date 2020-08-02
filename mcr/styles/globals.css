@@ -23,13 +23,17 @@ a {
   box-sizing: border-box;
 }
 
+h2 {
+  color: var(--red);
+}
+
   /* Scrollbar Styles */
   /* width */
   ::-webkit-scrollbar {
     width: 7px;
     height: 7px;
   }
-  
+
   /* Track */
   ::-webkit-scrollbar-track {
     /* border: solid 0.5px var(--highlight);
@@ -44,5 +48,5 @@ a {
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--darkred); 
+    background: var(--red); 
   }
