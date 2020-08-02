@@ -1,10 +1,5 @@
 const photos = [
     {
-      src: './gallery/buffet.jpg',
-      width: 2,
-      height: 4
-    },
-    {
       src: './gallery/capstone1.jpg',
       width: 1,
       height: 1
@@ -15,6 +10,11 @@ const photos = [
       height: 1
     },     
     {
+      src: './gallery/buffet.jpg',
+      width: 2,
+      height: 4
+    },
+    {
       src: './gallery/chicken_mushroom.jpg',
       width: 1,
       height: 1
@@ -23,17 +23,17 @@ const photos = [
       src: './gallery/dessert.jpg',
       width: 1,
       height: 1
-    },  
-    {
-      src: './gallery/capstone2.jpg',
-      width: 1,
-      height: 1
-    },
+    }, 
     {
       src: './gallery/dumpling.jpg',
       width: 1,
       height: 2
-    },    
+    },   
+    {
+      src: './gallery/capstone2.jpg',
+      width: 1,
+      height: 1
+    },  
     {
       src: './gallery/flat_bread.jpg',
       width: 1,
