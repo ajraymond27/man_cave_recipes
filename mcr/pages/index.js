@@ -59,7 +59,7 @@ export default class Home extends React.Component {
   return (
     <div className="container">
       <Head>
-        <title>Man Cave Recipes</title>
+        <title>Man Cave Kitchen</title>
       </Head>
       <Header />
       <div style={img}>
