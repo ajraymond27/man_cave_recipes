@@ -10,13 +10,13 @@ const navbar ={
 }
 
 const logo = {
-  width: '60px',
+  width: '100px',
 }
 
 export default function Header() {
     return (
         <Navbar collapseOnSelect expand="lg" sticky="top" style={navbar}>
-            <Navbar.Brand href="/" ><Link href="/" >MAN CAVE</Link></Navbar.Brand>
+            <Navbar.Brand href="/" ><Link href="/" ><img src='./logo.png' style={logo}/></Link></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                 <Nav>

@@ -1,3 +1,11 @@
+:root {
+  --yellow: #F2A922;
+  --orange: #F26513;
+  --red: #BF300F;
+  --darkred: #73130A;
+  --black: #0D0D0D;
+}
+
 html,
 body {
   padding: 0;
@@ -15,3 +23,26 @@ a {
   box-sizing: border-box;
 }
 
+  /* Scrollbar Styles */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* border: solid 0.5px var(--highlight);
+    border-radius: 5px; */
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--black); 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--darkred); 
+  }

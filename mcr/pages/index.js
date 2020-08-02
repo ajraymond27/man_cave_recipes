@@ -6,20 +6,18 @@ import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import ModalHeader from 'react-bootstrap/ModalHeader';
-import ModalTitle from 'react-bootstrap/ModalTitle';
-import ModalBody from 'react-bootstrap/ModalBody';
 import ReactPlayer from 'react-player';
 
 
 const img ={
-  backgroundImage: 'url("./grill.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))',
+  backgroundImage: 'url("./garage.png"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))',
   height: '90vh',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   position: 'relative',
   marginBottom: '25px',
+  opacity: 0.8,
 }
 
 const text ={
@@ -28,8 +26,10 @@ const text ={
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    color: 'white',
-    width: '100%'
+    color: 'var(--black)',
+    fontWeight: 'bold',
+    padding: '10px',
+    background: 'rgba(255, 255, 255, .77)'
 }
 
 const recipe ={
@@ -42,7 +42,7 @@ const button ={
   border: 'none',
   color: 'var(--white)',
   fontWeight: 'bold',
-  width: '40vw',
+  width: '35vw',
   padding: 15,
   margin: 10,
   textAlign: 'center',
@@ -62,13 +62,12 @@ export default class Home extends React.Component {
       <Header />
       <div style={img}>
         <div style={text}>
-          <h1>MAN CAVE KITCHEN</h1>
-          <h4>Insert Catchy Tagline</h4>
+          <img src='logo.png' style={{width: '250px'}}/>
         </div>
       </div>
 
       <div>
-        <h1>Latest Recipe</h1>
+        <h2>Latest Recipe</h2>
 
         <CardGroup style={recipe}>
         <Card>
