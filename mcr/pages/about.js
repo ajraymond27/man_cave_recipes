@@ -76,8 +76,8 @@ export default class About extends React.Component {
 
       <h4>Follow and Subscribe</h4>
       <SocialIcon url="https://www.youtube.com/" target="_blank" bgColor='var(--base2)' style={social}/>
-      <SocialIcon url="https://www.instagram.com/" target="_blank" bgColor='var(--base2)' style={social}/>
-      <SocialIcon url="https://www.facebook.com/" target="_blank" bgColor='var(--base2)' style={social}/>
+      <SocialIcon url="https://www.instagram.com/student_chef_519/?hl=en" target="_blank" bgColor='var(--base2)' style={social}/>
+      <SocialIcon url="https://www.facebook.com/jim.stanley.7509" target="_blank" bgColor='var(--base2)' style={social}/>
 
       <footer>
         <Footer />
